@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+	<title>Q&A</title>
+	<link rel="stylesheet" type="text/css" href="car.css">
+	<script src="https://kit.fontawesome.com/9c46563f40.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav>
+	<div class="text">Old Smoky Vintage Car</div>
+	
+	<ul>
+		<li><a href="home.html">Home</a></li>
+		<li><a href="contactus.html">Contact Us</a></li>
+		<li><a href="aboutus.html">About Us</a></li>
+		<li><a href="Q&A.html">Q&A</a></li>
+		<li><a href="register.html">Register</a></li>
+		<li><a href="ourdrivers.html">Our Drivers</a></li>
+	</ul>
+</nav>
+
+<div class="qanda">
+	<h3 class="heading">Have any thing to ask??</h3>
+	<p class="par">We're here to help you</p>
+
+	<form class="submit">
+	<input type="text" name="search" class="search" placeholder="Search... ">
+	<button type="submit" class="icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+	</form>
+
+	<div class="qandacontent">
+	<form class="form-inline" action="/action_page.php">
+		  <label for="name">Name:</label>
+		  <input type="text" id="name" placeholder="Enter name" name="name" required>
+		  <label for="email">Email:</label>
+		  <input type="email" id="email" placeholder="Enter email" name="email" required>
+		  <label>Contact About:</label>
+		  <textarea placeholder="Enter question" name="contact" required></textarea>
+		  <button type="submit">Submit</button>
+	</form>
+	</div>
+	
+	<div class="acc">
+	<h2 class="faqheading">FAQs</h2>
+	<button class="accordion">When do vally start?<span class="icon"><i class="fa-solid fa-plus"></i></span></button>
+	<div class="panel">
+	  <p>The vally starts every sixth month.</p>
+	</div>
+
+	<button class="accordion">When it is take place?<span class="icon"><i class="fa-solid fa-plus"></i></span></button>
+	<div class="panel">
+	  <p>It takes place in five countries: Myanmar, Thailand, Singapore, United State and Australia.</p>
+	</div>
+
+	<button class="accordion">Where can buy tickets?<span class="icon"><i class="fa-solid fa-plus"></i></span></button>
+	<div class="panel">
+	  <p>Tickets can be bought on social media or sending email.</p>
+	</div>
+	<button class="accordion">Where can we see any update?<span class="icon"><i class="fa-solid fa-plus"></i></span></button>
+	<div class="panel">
+	  <p>We will always try to keep up to date information on social media and send email messages.</p>
+	</div>
+	
+	<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].addEventListener("click", function() {
+		/* Toggle between adding and removing the "active" class,
+		to highlight the button that controls the panel */
+		this.classList.toggle("active");
+
+		/* Toggle between hiding and showing the active panel */
+		var panel = this.nextElementSibling;
+		if (panel.style.display === "block") {
+		  panel.style.display = "none";
+		} else {
+		  panel.style.display = "block";
+		}
+	  });
+	}
+	</script>
+	</div>
+	
+</div>
+
+<footer>
+<div class="footer-content">
+	<ul class="socials">
+		<li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+		<li><a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+		<li><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+		<li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+	</ul>
+	<h3>COPYRIGHT &copy; 2022 Vintage Car Rally </h3>
+
+</div>
+
+</footer>
+</body>
+</html>
