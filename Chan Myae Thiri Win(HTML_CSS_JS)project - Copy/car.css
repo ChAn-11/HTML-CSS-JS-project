@@ -51,7 +51,7 @@ li a{
 	} 
 li a:hover{
 		border-radius:4px;
-		color:gray;
+		color:black;
 		border-style:none none solid none;
 		border-color:#fff;
 		border-width:1px;
@@ -65,7 +65,8 @@ li a:hover{
 .content{
 	height:480px;
 	position:relative;
-	margin-top:-40%;
+	margin-top:-35%;
+	padding-left: 60px;
 	
 }
 .content h1{
@@ -86,6 +87,7 @@ li a:hover{
 	font-family:Geogria;
 	font-weight:bold;
 	text-align:justify;
+	word-spacing: 4px;
 	
 }
 .content a{
@@ -539,7 +541,7 @@ footer{
 }
 .contactform .inputbox input[type="submit"]{
 	width:100px;
-	background:#00bcd4;
+	background:#8ca7ab;
 	color:#fff;
 	border:none;
 	cursor:pointer;
@@ -639,11 +641,13 @@ footer{
 .qanda .heading{
 	font-size:30px;
 	font-family:calibri;
-	letter-spacing:3px;
+	letter-spacing:1px;
+	font-weight: bold;
 }
 .qanda .par{
 	font-size:20px;
 	font-family:calibri;
+	color: #fff;
 }
 .qanda .search{
   width: 250px;
@@ -690,6 +694,7 @@ footer{
   padding: 10px;
   background-color: #fff;
   border: 1px solid #ddd;
+  border-radius: 15px;
 }
 .form-inline textarea{
 	resize:none;
@@ -701,12 +706,13 @@ footer{
 	font-family:Arial;
 	height:23px;
 	width:199px;
+	border-radius: 22px;
 }
 
 .form-inline button {
   padding: 10px 20px;
-  background-color: dodgerblue;
-  border: 1px solid #ddd;
+  background-color: #8ca7ab;
+  border: 1px solid #8ca7ab;
   color: white;
 }
 
@@ -819,7 +825,8 @@ footer{
 .dcontainer{
   float: left;
   width: 100%;
-  margin:20px 10px 70px 10px;
+  margin-bottom: 70px;
+  padding-left: 95px;
 
 
 }
@@ -962,11 +969,11 @@ footer{
 	display:block;
 	margin-bottom:20px;
   }
-
+}
 
 @media (max-width:576px){
 #slider{width:100%;
-}
+}}
 
 @media (max-width: 1000px){
   nav{
